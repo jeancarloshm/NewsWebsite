@@ -10,6 +10,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #1c1c24;
+  overflow-y: overlay;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -17,6 +18,7 @@ body {
 ::-webkit-scrollbar-track {
   background-color: transparent;
   padding: 2px;
+  
 }
 ::-webkit-scrollbar-thumb {
   background-color: #4b89bf;
@@ -36,6 +38,11 @@ body {
   width: 100%;
   align-items: center;
   padding: 20px 50px;
+  transition: 0.3s;
+}
+.header.sticky{
+  padding-block: 10px;
+  box-shadow: inset 0 -1.5px 3px #3f73a0b9;
 }
 .logo {
   font-size: 45px;
@@ -175,17 +182,21 @@ nav ul li a {
   width: 100%;
   height: 150px;
   background-color: crimson;
+  border-radius: 5px;
 }
 .page2 .news .newsBox .newsCard .text{
   padding: 10px;
 }
-
-.page2 .news .newsBox .newsCard .text .title p {
+.page2 .news .newsBox .newsCard .text .title a{
+  text-decoration: none;
+}
+.page2 .news .newsBox .newsCard .text .title a p {
   font-size: 15px;
   display: inline;
   cursor: pointer;
+  color: #1c1c24;
 }
-.page2 .news .newsBox .newsCard .text .title p:hover {
+.page2 .news .newsBox .newsCard .text .title a p:hover {
   text-decoration: underline;
 }
 .footer{
@@ -266,4 +277,10 @@ nav ul li a {
 .footer .newsletter .email button:hover{
   color: #4b89bf;
   background-color: #f2f2f2;
+}
+.footer .copyrights{
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 1px;
 }
