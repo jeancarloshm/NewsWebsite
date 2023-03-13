@@ -19,7 +19,6 @@ body {
 ::-webkit-scrollbar-track {
   background-color: transparent;
   padding: 2px;
-  
 }
 ::-webkit-scrollbar-thumb {
   background-color: #4b89bf;
@@ -42,7 +41,7 @@ body {
   background-color: #4b89bf;
   transition: 0.3s;
 }
-.header.sticky{
+.header.sticky {
   padding-block: 10px;
   box-shadow: inset 0 -1.5px 3px #3f73a0b9;
 }
@@ -54,6 +53,23 @@ body {
 }
 nav ul {
   display: flex;
+}
+nav ul.bar {
+  display: none;
+  position: absolute;
+  right: 50px;
+  margin-top: -10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+nav div.bar.active .open {
+  display: none;
+}
+nav div.bar .close {
+  display: none;
+}
+nav div.bar.active .close {
+  display: initial;
 }
 nav ul li {
   list-style: none;
@@ -99,7 +115,7 @@ nav ul li a {
   padding: 20px 15px 10px;
 }
 
-.topHeadlines .left .text .title a{
+.topHeadlines .left .text .title a {
   text-decoration: none;
 }
 
@@ -144,10 +160,9 @@ nav ul li a {
 .topHeadlines .right .topNews .news .img {
   width: 170px;
   height: 120px;
-  
 }
 
-.topHeadlines .right .topNews .news .img img{
+.topHeadlines .right .topNews .news .img img {
   width: 100%;
   height: 100%;
 }
@@ -181,9 +196,9 @@ nav ul li a {
   padding: 30px 0;
   border-bottom: 1px solid #4b89bf;
 }
-.page2 .news:last-child{
+.page2 .news:last-child {
   padding: 30px 0;
-  border-bottom: none
+  border-bottom: none;
 }
 .page2 .news > .title h2 {
   font-size: 40px;
@@ -197,7 +212,6 @@ nav ul li a {
   width: 100%;
   margin-top: 20px;
   display: flex;
-
 }
 .page2 .news .newsBox .newsCard {
   width: calc(100% / 5 -20px);
@@ -215,16 +229,15 @@ nav ul li a {
   border-radius: 5px;
 }
 
-
-.page2 .news .newsBox .newsCard .text{
+.page2 .news .newsBox .newsCard .text {
   padding: 10px;
 }
 
-.page2 .news .newsBox .newsCard .text .title a{
-text-decoration: none;
+.page2 .news .newsBox .newsCard .text .title a {
+  text-decoration: none;
 }
 
-.page2 .news .newsBox .newsCard .text .title a{
+.page2 .news .newsBox .newsCard .text .title a {
   text-decoration: none;
 }
 .page2 .news .newsBox .newsCard .text .title a p {
@@ -236,34 +249,34 @@ text-decoration: none;
 .page2 .news .newsBox .newsCard .text .title a p:hover {
   text-decoration: underline;
 }
-.footer{
+.footer {
   width: 100%;
   padding: 50px 50px 20px;
-  background-color:#4b89bf;
+  background-color: #4b89bf;
   min-height: 200px;
   color: #f2f2f2;
 }
-.footer .box{
+.footer .box {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
 }
-.footer .box .left{
+.footer .box .left {
   display: flex;
   justify-content: space-around;
   padding-right: 20px;
 }
-.footer .box .left .categories > p{
+.footer .box .left .categories > p {
   font-size: 28px;
   margin-bottom: 30px;
 }
-.footer .box .left .categories div{
+.footer .box .left .categories div {
   margin-bottom: 15px;
   width: max-content;
 }
-.footer .box .left .categories div p{
+.footer .box .left .categories div p {
   font-size: 20px;
   cursor: pointer;
   padding: 0 10px;
@@ -275,34 +288,34 @@ text-decoration: none;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 }
-.footer .contact p{
+.footer .contact p {
   font-size: 28px;
   margin-bottom: 30px;
 }
-.footer .contact{
+.footer .contact {
   margin-left: 10px;
 }
-.footer .contact div{
+.footer .contact div {
   font-size: 17px;
   margin-bottom: 15px;
 }
-.footer .newsletter p{
+.footer .newsletter p {
   font-size: 28px;
   margin-bottom: 30px;
 }
-.footer .newsletter .email{
+.footer .newsletter .email {
   display: flex;
 }
-.footer .newsletter .email input{
+.footer .newsletter .email input {
   width: 400px;
-  padding: 12px 25px; 
+  padding: 12px 25px;
   border-radius: 5px;
   border: none;
   outline: none;
   font-size: 16px;
   margin-right: 20px;
 }
-.footer .newsletter .email button{
+.footer .newsletter .email button {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: 600;
@@ -314,35 +327,35 @@ text-decoration: none;
   cursor: pointer;
   transition: 0.3s;
 }
-.footer .newsletter .email button:hover{
+.footer .newsletter .email button:hover {
   color: #4b89bf;
   background-color: #f2f2f2;
 }
-.footer .copyrights{
+.footer .copyrights {
   font-size: 18px;
   text-align: center;
   padding: 20px;
   letter-spacing: 1px;
 }
-@media (max-width:1024px) {
-  .topHeadlines .right .topNews .news .img{
+@media (max-width: 1024px) {
+  .topHeadlines .right .topNews .news .img {
     width: 150px;
   }
-  .topHeadlines .right .topNews .news .text .title a p{
+  .topHeadlines .right .topNews .news .text .title a p {
     font-size: 14px;
   }
-  .page2 .news .newsBox .newsCard .img{
+  .page2 .news .newsBox .newsCard .img {
     height: 120px;
   }
-  .page2 .news .newsBox .newsCard .img{
+  .page2 .news .newsBox .newsCard .img {
     padding: 5px;
   }
 
-  .page2 .news .newsBox .newsCard .text .title a p{
+  .page2 .news .newsBox .newsCard .text .title a p {
     font-size: 14px;
   }
   .footer .box .left .categories > p {
-   font-size: 25px; 
+    font-size: 25px;
   }
   .footer .contact p {
     font-size: 25px;
@@ -353,17 +366,31 @@ text-decoration: none;
   .footer .newsletter .email input {
     width: 300px;
   }
-  .footer .newsletter .categories button{
+  .footer .newsletter .categories button {
     padding: 10px 20px;
     font-size: 14px;
   }
   .footer .box .left .categories div p {
     font-size: 18px;
   }
-  .footer .contact div{
+  .footer .contact div {
     font-size: 15px;
   }
-
-
-
+}
+@media (max-width: 768px) {
+  nav div.bar {
+    display: block;
+  }
+  nav ul {
+    opacity: 0;
+    position: absolute;
+    background-color: #4b89bf;
+    flex-direction: column;
+    right: -50px;
+    padding: 30px 40px 10px;
+    text-align: center;
+  }
+  nav ul.activeMenu {
+    opacity: 1;
+  }
 }
