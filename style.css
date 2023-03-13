@@ -378,10 +378,10 @@ nav ul li a {
   }
 }
 @media (max-width: 768px) {
-  nav div.bar {
+  nav > div.bar {
     display: block;
   }
-  nav ul {
+  nav > ul {
     opacity: 0;
     position: absolute;
     background-color: #4b89bf;
@@ -390,7 +390,13 @@ nav ul li a {
     padding: 30px 40px 10px;
     text-align: center;
   }
-  nav ul.activeMenu {
+
+  .activeMenu {
     opacity: 1;
+  }
+}
+@media (min-width: 769px) {
+  .bar {
+    display: none;
   }
 }

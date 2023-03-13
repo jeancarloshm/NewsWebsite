@@ -8,11 +8,10 @@ let techNews = document.querySelector("#techNews .newsBox");
 
 let header = document.querySelector(".header");
 let toggleMenu = document.querySelector(".bar");
-let menu = document.querySelector("nav ul");
+let menu = document.querySelector("menu");
 
-const toggle = (e) => {
-  toggleMenu.classList.toggle("active");
-  menu.classList.toggle("activeMenu");
+const toggleMenuHandler = () => {
+  menu.classList.add("activeMenu");
 };
 
 toggleMenu.addEventListener("click", toggle);
