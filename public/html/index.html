@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Newsroom</title>
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/public/css/Home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"
@@ -20,16 +20,16 @@
     <div class="header">
       <div class="logo">The Newsroom</div>
       <nav>
-        <ul class="menu">
+        <div class="bar">
+          <i class="open fa-solid fa-bars-staggered"></i>
+          <i class="close fa-solid fa-x"></i>
+        </div>
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#sportsNews">Sports</a></li>
           <li><a href="#businessNews">Business</a></li>
           <li><a href="#techNews">Technology</a></li>
         </ul>
-        <div class="bar">
-          <i class="open fa-solid fa-bars"></i>
-          <i class="close fa-solid fa-x"></i>
-        </div>
       </nav>
     </div>
 
@@ -111,6 +111,6 @@
       </div>
       <div class="copyrights">Copyrights &copy; 2023 O&J Group Web</div>
     </footer>
-    <script src="app.js"></script>
+    <script src="/public/js/app.js"></script>
   </body>
 </html>

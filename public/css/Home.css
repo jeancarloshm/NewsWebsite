@@ -390,13 +390,4 @@ nav ul li a {
     padding: 30px 40px 10px;
     text-align: center;
   }
-
-  .activeMenu {
-    opacity: 1;
-  }
-}
-@media (min-width: 769px) {
-  .bar {
-    display: none;
-  }
 }
