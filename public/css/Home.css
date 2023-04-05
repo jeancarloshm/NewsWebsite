@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Estilos base */
+
 * {
   margin: 0;
   padding: 0;
@@ -389,5 +392,74 @@ nav ul li a {
     right: -50px;
     padding: 30px 40px 10px;
     text-align: center;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Estilos base */
+/* (Tu código base actual aquí) */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .header {
+    padding: 15px 30px;
+  }
+  .page2 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+  }
+  
+  nav ul {
+    display: none;
+  }
+
+  nav ul.bar {
+    display: initial;
+  }
+
+  .topHeadlines {
+    grid-template-columns: 1fr;
+  }
+
+  .topHeadlines .left {
+    width: 100%;
+  }
+
+  .topHeadlines .right {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+    padding: 50px 15px 20px;
+    box-sizing: border-box;
+  }
+  .footer .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .box .left {
+    padding-right: 0;
+  }
+  .page2 {
+    padding: 50px 20px;
+    width: 100%;
+  }
+  
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .topHeadlines {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .topHeadlines .right {
+    display: block;
   }
 }
