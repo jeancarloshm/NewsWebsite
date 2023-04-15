@@ -36,13 +36,13 @@ app.post('/upload', (req, res) => {
     })
 })
 
-// app.get("/:blog", (req, res) => {
-//     res.sendFile(path.join(initial_path, "blog.html"));
-// })
+app.get("/:blog", (req, res) => {
+    res.sendFile(path.join(initial_path, "html/blog.html"));
+})
 
-// app.use((req, res) => {
-//     res.json("404");
-// })
+app.use((req, res) => {
+    res.json("404");
+})
 
 app.listen("3000", () => {
     console.log('listening on port 3000');

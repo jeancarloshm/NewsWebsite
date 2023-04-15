@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Newsroom</title>
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.jpg" />
     <link rel="stylesheet" type="text/css" href="/css/Home.css" />
     <link
       rel="stylesheet"
@@ -14,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -36,6 +37,16 @@
       <div class="selfs-news">
         <a href="/editor" class="btn-news">Write a blog</a>
       </div>
+
+      <!-- blog section -->
+    <section class="blogs-section">
+      <!-- <div class="blog-card">
+          <img src="/img/header.png" class="blog-image" alt="">
+          <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+          <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+          <a href="/" class="btn dark">read</a>
+      </div> -->
+    </section>
 
     <div class="topHeadlines">
       <div class="left">
@@ -116,7 +127,12 @@
       </div>
       <div class="copyrights">Copyrights &copy; 2023 O&J Group Web</div>
     </footer>
-    <script src="/js/app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
     <script src="/js/firebase.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/home.js"></script>
   </body>
 </html>
