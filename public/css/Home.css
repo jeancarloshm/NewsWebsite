@@ -32,7 +32,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
-    padding: 13px 20px;
+    padding: 18px 20px;
     background-color: #0077cc;
     color: #fff;
     text-decoration: none;
@@ -188,8 +188,7 @@ nav ul li a {
   height: 85%;
   border: 2px solid #4b89bf;
   border-radius: 4px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .topHeadlines .right .topNews .news {
   display: grid;
@@ -288,12 +287,6 @@ nav ul li a {
 }
 .page2 .news .newsBox .newsCard .text .title a p:hover {
   text-decoration: underline;
-}
-.Blog-News{
-  padding: 0 50px;
-  font-size: 40px;
-    cursor: pointer;
-    display: inline;
 }
 .footer {
   width: 100%;
@@ -396,12 +389,11 @@ nav ul li a {
   flex: 0 0 auto;
   scroll-snap-align: center;
   width: 300px; /* Establece el ancho de cada tarjeta */
-  height: 350px; /* Establece la altura de cada tarjeta */
+  height: 400px; /* Establece la altura de cada tarjeta */
   flex: 0 0 auto;
   scroll-snap-align: center;
   margin: 10px;
 }
-
 .blog-image{
 
     max-width: 100%; /* Limita el ancho de la imagen al ancho del contenedor .blog-card */

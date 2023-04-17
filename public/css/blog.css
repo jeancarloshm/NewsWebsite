@@ -44,17 +44,3 @@
     font-size: 40px;
     margin-top: 80px;
 }
-.blogs-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Esto permitirá que las tarjetas se ajusten en múltiples filas si no hay suficiente espacio en una sola fila */
-    gap: 20px; /* Espacio entre las tarjetas */
-  }
-  .btn{
-    background-color: #4b89bf;
-    position: relative;
-    bottom: -2rem;
-  }
-  .navbar{
-    background-color: #4b89bf;
-  }
