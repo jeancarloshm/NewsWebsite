@@ -26,6 +26,7 @@ body {
 }
 
 .btn-news {
+<<<<<<< HEAD
       position: absolute;
     top: 50%;
     left: 50%;
@@ -41,6 +42,21 @@ body {
     margin-top: -30px;
     text-align: center;
     line-height: 1.2;
+=======
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -30px;
+>>>>>>> parent of 197b522 (Implementation of a carucel for blog news)
 }
 
 .btn-news:hover {
@@ -367,6 +383,7 @@ nav ul li a {
   padding: 20px;
   letter-spacing: 1px;
 }
+<<<<<<< HEAD
 .carousel {
   padding: 10px;
   display: flex;
@@ -396,6 +413,8 @@ nav ul li a {
   
 
 
+=======
+>>>>>>> parent of 197b522 (Implementation of a carucel for blog news)
 @media (max-width: 1024px) {
   .topHeadlines .right .topNews .news .img {
     width: 150px;
