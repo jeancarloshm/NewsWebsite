@@ -26,19 +26,21 @@ body {
 }
 
 .btn-news {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: -30px;
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 18px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -30px;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .btn-news:hover {
@@ -358,6 +360,34 @@ nav ul li a {
   padding: 20px;
   letter-spacing: 1px;
 }
+.carousel {
+  padding: 10px;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blog-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 300px; /* Establece el ancho de cada tarjeta */
+  height: 400px; /* Establece la altura de cada tarjeta */
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  margin: 10px;
+}
+.blog-image{
+
+    max-width: 100%; /* Limita el ancho de la imagen al ancho del contenedor .blog-card */
+    max-height: 200px; /* Establece la altura máxima de la imagen */
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen al ajustar su tamaño */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 10px; /* Añade un margen inferior si es necesario */
+  }
+  
+
+
 @media (max-width: 1024px) {
   .topHeadlines .right .topNews .news .img {
     width: 150px;
