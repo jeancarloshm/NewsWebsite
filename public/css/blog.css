@@ -64,3 +64,27 @@
     background: rgba(0, 0, 0, 0.2);
     display: none;
   }
+  .header {
+    position: relative; /* Asegúrate de que tenga una posición distinta de 'static' para que 'z-index' funcione */
+    z-index: 2; /* Un valor más alto que el del banner */
+    /* Agrega aquí otros estilos para el encabezado */
+  }
+  
+  .banner {
+    position: relative; /* Asegúrate de que tenga una posición distinta de 'static' para que 'z-index' funcione */
+    z-index: 1; /* Un valor más bajo que el del encabezado */
+    /* Agrega aquí otros estilos para el banner */
+  }
+.btn-news{
+    top: 42%;
+}  
+
+.btn-edit .btn{
+    position: relative;
+    margin-left: 15%;
+    background: #a5a5a5;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+}

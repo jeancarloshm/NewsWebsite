@@ -1,0 +1,21 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos del rectángulo */
+  .rectangulo {
+    width: 300px;
+    height: 150px;
+    background-color: #3498db;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+  }
+  

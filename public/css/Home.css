@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 body {
   background-color: F2F2F2;
@@ -394,7 +395,13 @@ nav ul li a {
     margin-bottom: 10px; /* Añade un margen inferior si es necesario */
   }
   
-
+  .btn.dark{
+    background: #4b89bf;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
 @media (max-width: 1024px) {
   .topHeadlines .right .topNews .news .img {

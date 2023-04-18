@@ -86,7 +86,7 @@ textarea::-webkit-scrollbar-thumb{
     align-items: center;
 }
 
-.btn{
+.btn.dark{
     color: #fff;
     background-color: #4b89bf;
     border: none;
@@ -94,13 +94,25 @@ textarea::-webkit-scrollbar-thumb{
     outline: none;
     cursor: pointer;
     padding: 10px 20px;
+    font-size: medium;
+    height: 75%;
+
 }
 
 .btn.grey{
     background: #a5a5a5;
     color: #fff;
-    margin-left: 20px;
-    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin-left: 3%;
+    font-size: medium;
+    height: 75%;
+    display: flex;
+    text-align: center;
+    
 }
 .logo{
     padding: 10px;

@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
 
     <!-- firebase auth UI -->
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    />
 
-    <link rel="stylesheet"  href="/css/Home.css">
-    <link rel="stylesheet"  href="/css/dashboard.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/css/Home.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
     <!-- login -->
 
     <div class="login">
-        <div id="loginUI"></div>
+      
+      <div id="loginUI"></div>
+      <div class="rectangulo">
+        <div class="logologin">
+        <img src="../img/favicon.jpg" class="logo" alt="">
+      </div>
+        <h1>Login</h1>
+      </div>
     </div>
-    
+
     <div class="header">
-        <div class="logo">The Newsroom</div>
-        <nav>
-          <div class="bar">
-            <i class="open fa-solid fa-bars-staggered"></i>
-            <i class="close fa-solid fa-x"></i>
-          </div>
-          <ul class="links-container">
-            <li><a href="/html/index.html">Home</a></li>
-            <li><a href="#sportsNews">Sports</a></li>
-            <li><a href="#businessNews">Business</a></li>
-            <li><a href="#techNews">Technology</a></li>
-            <li><a href="/editor" class="btn-news">Write a News</a></li>
-          </ul>
-        </nav>
-      </div>  
+      <div class="logo">The Newsroom</div>
+      <nav>
+        <div class="bar">
+          <i class="open fa-solid fa-bars-staggered"></i>
+          <i class="close fa-solid fa-x"></i>
+        </div>
+        <ul class="links-container">
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="#sportsNews">Sports</a></li>
+          <li><a href="#businessNews">Business</a></li>
+          <li><a href="#techNews">Technology</a></li>
+          <li><a href="/editor" class="btn-news">Write a News</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="heading">Your News</h1>
 
-      <!-- dashboard -->
-      <h1 class="heading"> Your News </h1>
+    <!-- dashboard -->
 
-      <!-- blog section -->
-      <section class="blogs-section carousel">
-        <!-- <div class="blog-card">
+    <!-- blog section -->
+    <section class="blogs-section carousel">
+      <!-- <div class="blog-card">
             <img src="/img/header.png" class="blog-image" alt="">
             <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
             <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
@@ -50,8 +60,7 @@
             <a href="/" class="btn-grey">edit</a>
             <a href="/" class="btn-danger">delete</a>
         </div> -->
-      </section>
-
+    </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
@@ -61,5 +70,5 @@
     <script src="/js/firebase.js"></script>
     <script src="/js/dashboard.js"></script>
     <script src="/js/nav.js"></script>
-</body>
+  </body>
 </html>
