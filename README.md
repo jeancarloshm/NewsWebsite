@@ -7,4 +7,4 @@ The Newsroom is a user-friendly website that serves as a one-stop destination fo
 
 2 - Then, you must type "npm start" to be able to run the server locally.
 
-3 - Finally, you can access the app by navigating to (http://localhost:3000) in your web browser.
+3 - Finally, you can access the app by navigating to "http://localhost:3000" in your web browser.
